@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 const App = () => {
-  // Actions
+  // State
+  const [walletAddress, setWalletAddress] = useState(null);
 
   // check window obj in DOM to see if Phantom extension has injected the SOL object
   // if have SOL obj -> check to see if it's a Phantom wallet
@@ -19,6 +20,7 @@ const App = () => {
             "Connected with Public key:",
             response.publicKey.toString()
           );
+          setWalletAddress(response.publicKey.toString());
         }
       } else {
         alert("Solana object not found! Get a Phantom Wallet 👻");
@@ -54,7 +56,13 @@ const App = () => {
         <div className="header-container">
           <p className="header">Doge Zillas</p>
           <p className="sub-text">3 good boys borking on Solana</p>
-          {renderNotConnectedContainer()}
+          {!walletAddress && renderNotConnectedContainer()}
+          {walletAddress && (
+            <p>
+              <b>Logged in as:</b>
+              {walletAddress}
+            </p>
+          )}
         </div>
       </div>
     </div>
