@@ -1,6 +1,6 @@
 {
-  "name": "NAME_OF_NFT",
-  "symbol": "",
+  "name": "DOGE ZILLAS",
+  "symbol": "DZ",
   "image": "0.png",
   "properties": {
     "files": [
@@ -11,7 +11,7 @@
     ],
     "creators": [
       {
-        "address": "INSERT_YOUR_WALLET_ADDRESS_HERE",
+        "address": "5UG158zT62pKK3TJedFaEMYVvXeznAm3yc2Tpii4ns5t",
         "share": 100
       }
     ]
