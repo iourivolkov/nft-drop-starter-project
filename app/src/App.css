@@ -1,7 +1,10 @@
 .App {
   height: 100vh;
-  background-image: url("./assets/pixelSquaresbg.png");
-
+  background-image: url("./assets/pixelSquares.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   overflow: scroll;
   text-align: center;
   overflow: hidden;
@@ -34,11 +37,13 @@
   font-size: 65px;
   font-weight: bold;
   color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 .sub-text {
   font-size: 25px;
   color: rgb(65, 65, 65);
+  font-family: "Poppins", sans-serif;
 }
 
 .gradient-text {
