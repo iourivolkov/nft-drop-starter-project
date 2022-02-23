@@ -62,8 +62,8 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header">Doge Zillas</p>
-          <p className="sub-text">3 good boys borking on Solana</p>
+          <p className="header">Pixel Squares</p>
+          <p className="sub-text">Minimalist art living on Solana</p>
           {!walletAddress && renderNotConnectedContainer()}
           {walletAddress && (
             <p>

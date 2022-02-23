@@ -1,0 +1,19 @@
+{
+  "name": "Pixel Squares",
+  "symbol": "PS",
+  "image": "1.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "1.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "5UG158zT62pKK3TJedFaEMYVvXeznAm3yc2Tpii4ns5t",
+        "share": 100
+      }
+    ]
+  }
+}
